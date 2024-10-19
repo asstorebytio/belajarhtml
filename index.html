@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I am</title>
+  <style>
+    @font-face {
+      font-family: hHacimaki;
+      src: url(imgsrc/hHachimaki.ttf);
+    }
+    @font-face {
+      font-family: RetroComput;
+      src: url(imgsrc/retro_computer_personal_use.ttf);
+    }
+    @font-face {
+      font-family: Evers;
+      src: url(imgsrc/);
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: RetroComput;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    nav {
+      width: 100%;
+      background-color: whitesmoke;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      height: 40px;
+      user-select: none;
+      opacity: 80%;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+    }
+    nav ul li img {
+      height: 20px;
+      margin-right: 5px;
+      filter: grayscale(100%) brightness(0);
+      transition: filter 0.3s;
+    }
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: RetroComput;
+      transition: color 0.3s;
+    }
+    nav ul li:hover a {
+      color: #6a2d60;
+    }
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 90%;
+    }
+    .section {
+      min-height: 100vh;
+      padding: 30px;
+      color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      user-select: none;
+      position: relative; 
+      overflow: hidden; 
+    }
+    .section h2 {
+      font-size: 58px;
+      margin-bottom: 0px; /* Mengubah margin-bottom menjadi lebih kecil */
+      margin: 0;
+      line-height: 1;
+      user-select: none;
+    }
+    .section-content {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      position: relative;
+      z-index: 1; 
+    }
+    .section-image {
+      flex: 1;
+      max-width: 50%;
+      line-height: 1;
+      margin: 0;
+    }
+    .section-image img {
+      width: 50%; 
+      height: auto; 
+      border-radius: 10px;
+      line-height: 1;
+      margin: 0;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    .section-text {
+      flex: 1;
+    }
+    .section-text p {
+      margin-top: 0; 
+      margin-bottom: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <img src="imgsrc/home.png" alt="Logo Home">
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <img src="imgsrc/user.png" alt="Logo About">
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <img src="imgsrc/layers.png" alt="Logo Projects">
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <img src="imgsrc/information-button.png" alt="Logo Contact">
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <video id="video-background" autoplay muted loop>
+    <source src="imgsrc/3129595-uhd_3840_2160_30fps.mp4" type="video/mp4">
+  </video>
+  <div id="home" class="section">
+    <div class="section-content">
+      <div class="section-text">
+        <h2>Hello</h2>
+        <h2>I am a beginner.</h2>
+        <p>- Design by tio -</p>
+      </div>
+    </div>
+  </div>
+  <div id="about" class="section">
+    <div class="section-content">
+      <div class="section-text">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="section-image">
+        <img src="imgsrc/wadaq.png" alt="About Me">
+      </div>
+    </div>
+  </div>
+  <div id="projects" class="section">
+    <div class="section-content">
+      <div class="section-text">
+        <h2>Projects</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
+      </div>
+      <div class="section-image">
+        <img src="imgsrc/2d98f017-1628-411e-acec-b4cc85b1e072q.png" alt="Projects Image"> 
+      </div>
+    </div>
+  </div>
+  <div id="contact" class="section">
+    <div class="section-content">
+      <div class="section-text">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.</p>
+      </div>
+      <div class="section-image">
+        <img src="imgsrc/57077fe5-43f1-4581-990f-39e290c2575aq.png" alt="Contact Image">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
